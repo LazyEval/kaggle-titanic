@@ -1,4 +1,4 @@
-Titanic data set with applied software engineering principles
+Titanic project using SE best practices
 ==============================
 
 This project is based on the Titanic competition on Kaggle.com. After a first few submissions using a Kaggle notebook I decided to take the time to refactor the project so that I could learn a few important (in my opinion) software engineering principles that could make my project stable and reusable or "production-ready".
