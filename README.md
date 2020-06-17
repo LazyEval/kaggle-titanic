@@ -1,7 +1,7 @@
-titanic
+Titanic data set with applied software engineering principles
 ==============================
 
-Titanic competition on Kaggle.com
+This project is based on the Titanic competition on Kaggle.com. After a first few submissions using a Kaggle notebook I decided to take the time to refactor the project so that I could learn a few important (in my opinion) software engineering principles that could make my project stable and reusable or "production-ready".
 
 Project Organization
 ------------
@@ -35,7 +35,7 @@ Project Organization
     ├── src                <- Source code for use in this project.
     │   ├── __init__.py    <- Makes src a Python module
     │   │
-    │   ├── data           <- Scripts to download or generate data
+    │   ├── data           <- Scripts to download or generate data (NOT RELEVANT FOR THIS PROJECT)
     │   │   └── make_dataset.py
     │   │
     │   ├── features       <- Scripts to turn raw data into features for modeling
@@ -55,3 +55,4 @@ Project Organization
 --------
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
