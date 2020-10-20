@@ -12,14 +12,14 @@ from src.models import Model
 @click.argument('input_data', type=click.Path(exists=True))
 @click.argument('input_model', type=click.Path(exists=True))
 @click.argument('output_prediction', type=click.Path())
-def main(input_data, input_model, output_prediction):
+def main(input_train, input_test, input_model, output_prediction):
     """ Runs modeling scripts using model pickle (../models) to predict
         outcomes. Outcomes file is saved as .csv (saved in ../models).
     """
     logger = logging.getLogger(__name__)
     logger.info('predicting outcomes')
 
-    data = DataSet(test_dir=input_data)
+    data = DataSet(train_dir=input_train, test_dir=input_test)
     test = data.get_test_set()
     X_test = data.get_features(test)
 

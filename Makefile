@@ -42,7 +42,7 @@ train:
 
 ## Predict
 predict:
-	$(PYTHON_INTERPRETER) src/models/predict_model.py data/processed/test_clean.csv models/ models/
+	$(PYTHON_INTERPRETER) src/models/predict_model.py data/processed/train.csv data/processed/test_clean.csv models/ models/
 
 ## Delete all compiled Python files
 clean:
