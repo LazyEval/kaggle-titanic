@@ -9,7 +9,8 @@ from src.models import Model
 
 
 @click.command()
-@click.argument('input_data', type=click.Path(exists=True))
+@click.argument('input_train', type=click.Path(exists=True))
+@click.argument('input_test', type=click.Path(exists=True))
 @click.argument('input_model', type=click.Path(exists=True))
 @click.argument('output_prediction', type=click.Path())
 def main(input_train, input_test, input_model, output_prediction):
