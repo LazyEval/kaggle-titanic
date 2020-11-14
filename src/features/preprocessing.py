@@ -73,12 +73,12 @@ class TitanicPreProcessing(PreProcessing):
     def create_title(self):
         """Create a Title feature based on the Name feature and replace the titles with the most common instances."""
         self.data['Title'] = (self.data['Name']
-                                .str.extract(' ([A-Za-z]+)\.', expand=False)
-                                .replace(['Capt', 'Col', 'Countess', 'Don', 'Dr', 'Jonkheer',
-                                          'Lady', 'Major', 'Rev', 'Sir', 'Dona'], 'Rare')
-                                .replace('Mlle', 'Miss')
-                                .replace('Mme', 'Mrs')
-                                .replace('Ms', 'Miss'))
+                              .str.extract(r' ([A-Za-z]+)\.', expand=False)
+                              .replace(['Capt', 'Col', 'Countess', 'Don', 'Dr', 'Jonkheer',
+                                        'Lady', 'Major', 'Rev', 'Sir', 'Dona'], 'Rare')
+                              .replace('Mlle', 'Miss')
+                              .replace('Mme', 'Mrs')
+                              .replace('Ms', 'Miss'))
 
     def create_family(self):
         """Create a family feature based on the 'SibSp' and 'Parch' features."""
